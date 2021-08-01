@@ -72,36 +72,37 @@ sponserId: "dfvgbn"
               </div>
               <div className="application__firstWrapper2">
                 <h3>
-                  Have you ever held a 4Life distributor ID?
                   <span>
-                    OldDistributorID {application.OldDistributorID}{" "}
+                    OldDistributorID:- {application.OldDistributorID}{" "}
                   </span>{" "}
                 </h3>
                 <h3>
-                  FSAAI registration? {application.fssai_registration_check}{" "}
-                  <span>
-                    OldDistributorID {application.fssai_registration_Number}{" "}
-                  </span>{" "}
-                </h3>
+                  FSAAI registration:-  {application.fssai_registration_check}{" "}
+                  </h3>
+                  <h3>
+                    OldDistributorID:- {application.fssai_registration_Number}{" "}
+                  </h3>{" "}
               </div>
             </div>
             <div className="application__2ndWrapper1">
               <h1>APPLICANT INFORMATION</h1>
               <div className="application__applicationType">
-                <p>
+                <h4>
                   {" "}
-                  <span> Applicant Type:-</span>
-                  <span>{application.applicationType}</span>
-                </p>
+                  <span> Applicant Type:-{application.applicationType}</span>
+                
+                </h4>
               </div>
               <div className="application__applicationDetail">
                 <h3>
-                  Application Name:- <span>{application.applicantName}</span>{" "}
+                  <span> Application Name:-{application.applicantName}</span>{" "}
                 </h3>
                 <div className="application__2ndwrapper2">
                   <h3>
-                    Aadhaar Number:-{" "}
-                    <span>{application.applicantAadharNumber}</span>
+                    <span>
+                      {" "}
+                      Aadhaar Number:- {application.applicantAadharNumber}
+                    </span>
                     <button>
                       <a href={application.applicantAadharFile}>
                         <span>Click Here to Open File</span>
@@ -109,7 +110,7 @@ sponserId: "dfvgbn"
                     </button>{" "}
                   </h3>
                   <h3>
-                    Pan Number:- <span>{application.applicant_PAN_Number}</span>
+                    <span>Pan Number:-{application.applicant_PAN_Number}</span>
                     <button>
                       <a href={application.applicantPanFile}>
                         <span>Click Here to Open File</span>
@@ -118,12 +119,16 @@ sponserId: "dfvgbn"
                   </h3>
                 </div>
                 <h3>
-                  Co Application Name:- <span>{application.applicantName}</span>{" "}
+                  <span> Co Application Name:-{application.applicantName}</span>{" "}
                 </h3>
                 <div className="application__2ndwrapper3">
                   <h3>
-                    Co-Applicant Aadhaar Number:-{" "}
-                    <span>{application.coApplicantAadharNumber}</span>
+                    {" "}
+                    <span>
+                      {" "}
+                      Co-Applicant Aadhaar Number:-
+                      {application.coApplicantAadharNumber}
+                    </span>
                     <button>
                       <a href={application.coApplicantAadharFile}>
                         <span>Click Here to Open File</span>
@@ -131,8 +136,12 @@ sponserId: "dfvgbn"
                     </button>{" "}
                   </h3>
                   <h3>
-                    Co-Applicant Pan Number:-{" "}
-                    <span>{application.coApplicant_PAN_Number}</span>
+                    {" "}
+                    <span>
+                      {" "}
+                      Co-Applicant Pan Number:-{" "}
+                      {application.coApplicant_PAN_Number}
+                    </span>
                     <button>
                       <a href={application.coApplicantPanFile}>
                         <span>Click Here to Open File</span>
@@ -142,7 +151,7 @@ sponserId: "dfvgbn"
                 </div>
                 <div className="application__applicantAddress">
                   <h3>
-                    Address <span>{application.applicantAddress}</span>
+                    <span> Address:- {application.applicantAddress}</span>
                     <button>
                       <a href={application.applicantAddressProofFile}>
                         <span> Click Here to Download Address Proof</span>{" "}
@@ -152,32 +161,35 @@ sponserId: "dfvgbn"
 
                   <h4 className="application__applicantAddressh4">
                     <p>
-                      City:- <span>{application.applicant_city}</span>
+                      <span> City:-{application.applicant_city}</span>
                     </p>{" "}
                     <p>
-                      State:- <span>{application.applicant_state}</span>
+                      <span>State:- {application.applicant_state}</span>
                     </p>{" "}
                     <p>
-                      Pin Code:- <span>{application.applicant_pin_code}</span>
+                      <span>Pin Code:-{application.applicant_pin_code}</span>
                     </p>
                   </h4>
                   <h4 className="application__applicantAddressh4">
                     <p>
-                      Date of Birth:-{" "}
-                      <span>{application.applicant_dateOfBirth}</span>
+                      {" "}
+                      <span>
+                        {" "}
+                        Date of Birth:-{application.applicant_dateOfBirth}
+                      </span>
                     </p>{" "}
                     <p>E Mail:- {application.applicant_email}</p>
                   </h4>
                   <h4 className="application__applicantAddressh4">
                     {" "}
                     <p>
-                      Home Phone:- <span>{application.home_phone}</span>
+                      <span>Home Phone:- {application.home_phone}</span>
                     </p>{" "}
                     <p>
-                      Mobile Phone:- <span>{application.mobile_phone}</span>
+                      <span> Mobile Phone:-{application.mobile_phone}</span>
                     </p>{" "}
                     <p>
-                      Work Phone:- <span>{application.work_phone}</span>
+                      <span> Work Phone:-{application.work_phone}</span>
                     </p>{" "}
                   </h4>
                 </div>
@@ -187,19 +199,22 @@ sponserId: "dfvgbn"
               <h1>DISTRIBUTOR SHIPPING ADDRESS</h1>
               <div className="application__distributorWrapper">
                 <h3 className="application__applicantAddressh4">
-                  Address:-{" "}
-                  <span>{application.distributor_shipping_address}</span>{" "}
+                  {" "}
+                  <span>
+                    {" "}
+                    Address:-{application.distributor_shipping_address}
+                  </span>{" "}
                 </h3>
                 <h3 className="application__applicantAddressh4">
                   {" "}
                   <p>
-                    City:- <span>{application.distributorCity}</span>
+                    <span> City:-{application.distributorCity}</span>
                   </p>{" "}
                   <p>
-                    State:- <span>{application.distributorState}</span>
+                    <span> State:-{application.distributorState}</span>
                   </p>{" "}
                   <p>
-                    Pin Code:- <span>{application.distributorPinCode}</span>
+                    <span>Pin Code:-{application.distributorPinCode}</span>
                   </p>
                 </h3>
               </div>
@@ -208,9 +223,9 @@ sponserId: "dfvgbn"
               <h1>ENROLLER INFORMATION</h1>
               <h3 className="application__applicantAddressh4">
                 {" "}
-                Enroller Id:- <span>{application.enrollerid}</span>{" "}
+                <span>Enroller Id:-{application.enrollerid}</span>{" "}
                 <p>
-                  Name:- <span>{application.enrollername}</span>
+                  <span>Name:- {application.enrollername}</span>
                 </p>
               </h3>
             </div>
@@ -218,9 +233,9 @@ sponserId: "dfvgbn"
               <h1>SPONSOR INFORMATION</h1>
               <h3 className="application__applicantAddressh4">
                 {" "}
-                Enroller Id:- <span>{application.sponserId}</span>{" "}
+                <span> Enroller Id:-{application.sponserId}</span>{" "}
                 <p>
-                  Name:- <span>{application.sponsername}</span>
+                  <span> Name:- {application.sponsername}</span>
                 </p>
               </h3>
             </div>
