@@ -1,0 +1,44 @@
+.application{
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    padding: 10px;
+    &__first{
+        display: flex;
+    flex-direction: column;
+
+
+    }
+    &__firstWrapper1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__img{
+        width: 128px; height: 128px;
+    }
+    &__2ndwrapper2 {
+        display: flex;
+        text-align:center;
+        justify-content: space-between;
+    }
+    &__2ndwrapper3{
+        display: flex;
+        text-align:center;
+        justify-content: space-between;
+    }
+    &__applicantAddress{
+
+    }
+    &__applicantAddressh4{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__distributorWrapper{
+
+    }
+    &__EnrollerInfo{
+
+    }
+}
