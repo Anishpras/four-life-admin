@@ -7,67 +7,21 @@ const ApplicationDetail = ({ applicationList }) => {
   const applicationData = applicationList.filter(
     (application) => application.distributorId === id
   );
-  {
-    /* OldDistributorID: "1234rtasdfg"
-accountNumber: "cvbnmq"
-applicantAadharFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/applicant-aadhar%2F%20U5VTZ?alt=media&token=b008fb63-fcfc-4fd3-8169-a1accce77487"
-applicantAadharNumber: "sgsgdsgdsg"
-applicantAddress: "sdfgvhbfgnm"
-applicantAddressProofFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/address-proof%2F%20Q6575?alt=media&token=1476a5f7-db64-4f36-a4ac-8c5e7dc8fb28"
-applicantMobile: "8456464464"
-applicantName: "dsgersgsgdsw"
-applicantPanFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/applicant-PAN%2F%205AW5R?alt=media&token=3c084741-b6d8-40c4-842c-8a9b1cf9349f"
-applicantSignatureFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/applicant-signature%2F%20G2UHK?alt=media&token=b55163cd-c471-44b8-8a97-a2d7e544a5e1"
-applicantWorkPhone: "56446849489856"
-applicant_PAN_Number: "dsgdsgdsgdsfg"
-applicant_city: "sdfvbnm"
-applicant_dateOfBirth: "2021-08-11"
-applicant_email: "cvbnm"
-applicant_home_phone: "zxcvbnm"
-applicant_pincode: "dfvbgnm"
-applicant_state: "sdfbghnm"
-applicationType: "Company"
-branchNameAddress: "dfghjmq"
-cancelledChequeOrPassbookFile: ""
-coApplicantAadharFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/co-applicant-aadhar%2F%206CGBX?alt=media&token=4945568f-2370-4f18-9e56-7b132915285b"
-coApplicantAadharNumber: "dsgsdgdsgdsg"
-coApplicantName: "dsgsdgdsgdsg"
-coApplicantPanFile: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/co-applicant-PAN%2F%20W8O6K?alt=media&token=33faeb9b-a245-4d89-baac-6563cd37269d"
-coApplicantSignatureFile: ""
-coApplicant_PAN_Number: "dsgsdgsgsgdsg"
-distributorCity: "dfghnm"
-distributorId: " XM8E78HNNK"
-distributorPinCode: "sdfgn"
-distributorState: "dfvbn"
-distributor_shipping_address: "cdvbnm,"
-enrollerName: "dfgbnm"
-enrollerid: "dfghnm"
-fssai_registration_Number: "ASZDXFCDS3454235234"
-fssai_registration_check: "yes"
-held_DistributorID: "yes"
-ifscCode: "fghdfgh"
-name_of_bank: "dfghq"
-profileImage: "https://firebasestorage.googleapis.com/v0/b/four-life-application-form.appspot.com/o/profile-images%2F%20ZYBTF?alt=media&token=e0e1050f-fdc2-44e6-abbb-afe66a24b349"
-sponserId: "dfvgbn"
-*/
-  }
   return (
     <>
       {applicationData.map((application) => {
         return (
           <div className="application">
             <div className="application__first">
-              {/*            <div>
-</div> */}
               <div
                 className="application__firstWrapper1"
-                key={application.distributorId}
-              >
+                key={application.distributorId}>
                 <h1>{application.distributorId}</h1>
                 <h1> Date</h1>
                 <img
                   className="application__img"
                   src={application.profileImage}
+                  alt=""
                 />
               </div>
               <div className="application__firstWrapper2">
